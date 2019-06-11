@@ -27,7 +27,7 @@ public class readfileincludingsubfolder {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		File folder = new File("C:/Learnings");
+		File folder = new File("inputfiles/text files/");
 		System.out.println("Reading files under folder: "+folder.getAbsolutePath());
 		File arr[] = folder.listFiles();
 		readfileincludingsubfolder.getfileslist(arr,0);

@@ -7,7 +7,7 @@ import org.apache.commons.io.FilenameUtils;
 public class FilterFilebyType {
 	public static void main(String[] args) {
 		
-	File folder=new File("C:/Learnings");
+	File folder=new File("inputfiles/text files/");
 	File[] listOfFiles = folder.listFiles();
 	List<String> textfiles=new ArrayList<String>();
 	List<String> pptfiles=new ArrayList<String>();
@@ -32,6 +32,7 @@ public class FilterFilebyType {
 		if(FilenameUtils.getExtension(name).equalsIgnoreCase("pdf"))
 		{	
 			pdffiles.add(name);
+			
 			
 		}
 	}
