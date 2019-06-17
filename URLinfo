@@ -1,0 +1,38 @@
+package test;
+
+
+import java.net.URL;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.Proxy;
+import java.net.URISyntaxException;
+
+public class Urlinfo {
+
+	public static void main(String[] args) throws MalformedURLException,IOException, URISyntaxException {
+		// TODO Auto-generated method stub
+		
+	//	
+		//Proxy proxy;
+		URL url = 
+		        new URL("https://github.com/Akki-T/Java_Practise");
+		
+		System.out.println("host :"+url.getHost());
+		System.out.println("Port :"+url.getPort());
+		System.out.println("Path :"+url.getPath());
+		System.out.println("Default port :"+url.getDefaultPort());
+		System.out.println("Query : "+url.getQuery());
+	//	System.out.println("open connection with proxy" +url.openConnection(proxy));
+		//System.out.println(url.openStream());
+		System.out.println("Protocol: "+url.getProtocol());
+		System.out.println("Authority : "+url.getAuthority());
+		System.out.println("URL provided :"+url.toString());
+		
+		System.out.println("User Info :"+url.getUserInfo());
+		System.out.println("Open connection :"+url.openConnection());
+		System.out.println("URI of URL :"+url.toURI());
+		
+	}
+
+}
